@@ -17,6 +17,10 @@ section {
 
 header {
   background-color: #212529;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 header .menu {
   display: flex;
@@ -35,6 +39,7 @@ header .menu .btn {
   font-weight: 700;
   border: 1px solid #9a9d98;
   border-radius: 6px;
+  border-radius: 7px;
 }
 header .menu .btn .icon {
   font-size: 13px;
@@ -49,15 +54,63 @@ header .menu nav a:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 992px) {
-  header nav {
+  header .menu {
+    padding: 19px;
+  }
+  header .menu nav {
     display: none;
   }
-  header nav a {
+  header .menu nav a {
     font-size: 25px;
     margin-left: 25px;
   }
-  header nav a:hover {
+  header .menu nav a:hover {
     color: #f7af1b;
     cursor: pointer;
+  }
+  header .menu .btn {
+    display: flex;
+    align-items: center;
+    color: #9a9d98;
+    font-weight: 700;
+    border: 1px solid #9a9d98;
+    border-radius: 6px;
+  }
+  header .menu .icon {
+    font-size: 13px;
+    margin-left: 7px;
+  }
+}
+
+#ourstudio {
+  background-image: url("https://raw.githubusercontent.com/startb00tstrap/startb00tstrapagency/main/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 740px;
+}
+#ourstudio .box {
+  text-align: center;
+  margin-top: 215px;
+  color: white;
+}
+#ourstudio .box h1 {
+  font-size: 40px;
+}
+#ourstudio .box h3 {
+  font-size: 80px;
+  margin: 30px 0 60px;
+}
+#ourstudio .box h3, #ourstudio .box .btn {
+  font-weight: 700;
+}
+#ourstudio .box .btn {
+  font-size: 23px;
+  background-color: #ffc800;
+  color: white;
+  padding: 17px 40px;
+}
+@media screen and (max-width: 992px) {
+  #ourstudio .box {
+    margin-top: 190px;
   }
 }/*# sourceMappingURL=style.css.map */

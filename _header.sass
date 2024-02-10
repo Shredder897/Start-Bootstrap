@@ -1,5 +1,9 @@
 header
     background-color: #212529
+    position: fixed
+    right: 0
+    left: 0
+    z-index: 1
     .menu
         display: flex
         justify-content: space-between
@@ -15,6 +19,7 @@ header
             font-weight: 700
             border: 1px solid #9a9d98
             border-radius: 6px
+            border-radius: 7px
             .icon
                 font-size: 13px
                 margin-left: 7px
@@ -26,13 +31,23 @@ header
                     color: #f7af1b
                     cursor: pointer
     @media screen and ( max-width: 992px )
-        nav
-            display: none
-            a
-                font-size: 25px
-                margin-left: 25px
-                &:hover
-                    color: #f7af1b
-                    cursor: pointer
-
-        
+        .menu
+            padding: 19px
+            nav
+                display: none
+                a
+                    font-size: 25px
+                    margin-left: 25px
+                    &:hover
+                        color: #f7af1b
+                        cursor: pointer
+            .btn
+                display: flex
+                align-items: center
+                color: #9a9d98
+                font-weight: 700
+                border: 1px solid #9a9d98
+                border-radius: 6px
+            .icon
+                font-size: 13px
+                margin-left: 7px
