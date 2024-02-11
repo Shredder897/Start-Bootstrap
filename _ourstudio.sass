@@ -2,24 +2,37 @@
     background-image: url("https://raw.githubusercontent.com/startb00tstrap/startb00tstrapagency/main/header-bg.jpg")
     background-size: cover
     background-position: center
-    height: 740px
     .box
+        padding: 145px 0
         text-align: center
-        margin-top: 215px
         color: #ffff
-        h1
-            font-size: 40px
-        h3
-            font-size: 80px
-            margin: 30px 0 60px
-        h3,.btn
-            font-weight: 700
-        .btn
-            font-size: 23px
-            background-color: #ffc800
-            color: #ffff
-            padding: 17px 40px
-    @media screen and ( max-width: 992px )
+        .textbox
+            margin-top: 70px
+            h1
+                font-size: 40px
+            h3
+                font-size: 80px
+                margin: 30px 0 60px
+            h3,.btn
+                font-weight: 700
+            .btn
+                font-size: 23px
+                background-color: #ffc800
+                color: #ffff
+                padding: 17px 40px
+                border-radius: 5px
+                &:hover
+                    background-color: #d9aa00
+                h5
+                    cursor: pointer
+    h1,h3
+        cursor: text
+    @media screen and ( max-width: 768px )
         .box
-            margin-top: 190px
-        
+            padding: 10px
+            .textbox
+                margin-top: 105px
+                h1
+                    font-size: 30px
+                h3
+                    font-size: 60px
