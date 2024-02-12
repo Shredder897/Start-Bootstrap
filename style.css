@@ -254,4 +254,12 @@ header .menu nav a:hover {
 }
 #portfolio h1, #portfolio h2, #portfolio h3, #portfolio h4 {
   cursor: text;
+}
+
+#about .textbox h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#about .textbox h3 {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
